@@ -3,6 +3,7 @@ import gi
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
+import subprocess
 import os
 
 #import gtk
@@ -54,7 +55,7 @@ class Handler:
         MPIdialog.hide()
         head_tail = os.path.split(file_path)
         np = self.getText(number_of_processors)
-        os.system('mpiexec -n '+np+' ./try '+head_tail[1])
+        subprocess.run("mpiexec -n"+np+" ./try "+head_tail[1], shell=True)
         image.set_from_file(head_tail[0]+"Shapes_gray.png")
         
     def on_button_cancel_clicked(self, *args):
