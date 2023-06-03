@@ -10,7 +10,7 @@ GPL License 3.0
 This project consists of the implementation of a PNG image filter (gray scale) programmed in C that works in parallel with MPICH. The work was built over a graphic interface made in class with Glade and Python3.
 
 ## Running and compilation
-In order to be able to run the program you will need to have Glade and stb installed.
+In order to be able to run the program you will need to have Glade, PyGObject and stb installed.
 
 
 To compile the filter program you have to type on the terminal:
@@ -58,6 +58,7 @@ And the output:
 - [MPICH](https://www.mpich.org/).
 - [stb](https://github.com/nothings/stb).
 - [Glade](https://developer-old.gnome.org/gtkmm-tutorial/stable/chapter-builder.html.es).
+- [PyGObject](https://pypi.org/project/PyGObject/)
 - [Python3](https://www.python.org/).
 ## Another references
 - https://solarianprogrammer.com/2019/06/10/c-programming-reading-writing-images-stb_image-libraries/
