@@ -15,7 +15,7 @@ In order to be able to run the program you will need to have Glade, PyGObject an
 
 To compile the filter program you have to type on the terminal:
 ```
-mpicc \-o name filter1.c -lm
+mpicc \-o try filter1.c -lm
 ```
 To run the Python constructor
 ```
